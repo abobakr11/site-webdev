@@ -1,5 +1,4 @@
 ---
-layout: angular
 title: "Component Testing: @Input() and @Output()"
 description: Techniques and practices for component testing of AngularDart apps.
 sideNavGroup: advanced
@@ -10,8 +9,6 @@ nextpage:
   title: "Component Testing: Routing Components"
   url: /angular/guide/testing/component/routing-components
 ---
-{% include_relative _pageloader-mock-warning.md %}
-
 <?code-excerpt path-base="examples/ng/doc"?>
 
 {% include_relative _page-top-toc.md %}
