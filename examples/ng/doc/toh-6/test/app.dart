@@ -16,8 +16,10 @@ NgTestFixture<AppComponent> fixture;
 AppPO appPO;
 Router router;
 
-@GenerateInjector([  const ClassProvider(Client, useClass: InMemoryDataService),
-routerProvidersForTesting,])
+@GenerateInjector([
+  const ClassProvider(Client, useClass: InMemoryDataService),
+  routerProvidersForTesting,
+])
 final InjectorFactory rootInjector = self.rootInjector$Injector;
 
 void main() {

@@ -7,7 +7,6 @@ part 'app_po.g.dart';
 
 @PageObject()
 abstract class AppPO {
-
   AppPO();
   factory AppPO.create(PageLoaderElement context) = $AppPO.create;
 

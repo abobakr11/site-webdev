@@ -60,15 +60,14 @@ Here is the [page object][] for this component:
 
   @PageObject()
   abstract class HeroDetailPO {
-
     HeroDetailPO();
     factory HeroDetailPO.create(PageLoaderElement context) = $HeroDetailPO.create;
 
     @First(ByCss('div h2'))
-    PageLoaderElement  get _title;
+    PageLoaderElement get _title;
 
     @First(ByCss('div div'))
-    PageLoaderElement  get _id;
+    PageLoaderElement get _id;
 
     @ByTagName('input')
     PageLoaderElement get _input;
