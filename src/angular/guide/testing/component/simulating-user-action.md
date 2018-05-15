@@ -22,9 +22,9 @@ click on a given PO element. Here is an example for a _back_ button:
 <?code-excerpt "toh-5/test/hero_po.dart (back button)" title?>
 ```
   @ByTagName('button')
-  PageLoaderElement get _button => q('button');
+  PageLoaderElement get _button;
   // ···
-  Future back() => _button.click();
+  Future<void> back() => _button.click();
 ```
 
 Similarly, you might define a PO method for selecting a hero from

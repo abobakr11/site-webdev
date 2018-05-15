@@ -235,12 +235,14 @@ dependency_overrides:
       .pipe(replace(/( get \w*)\s*=>\s*q.*?;/g, '$1;'))
       .pipe(replace(/@FirstByCss(\(.*?\))/g, '@First(ByCss$1)'))
       .pipe(replace(/\b(Future)(\s)/g, '$1<void>$2'))
-      .pipe(replace(/class (\w+) extends PageObjectBase\s*{/g, `@PageObject()
+      .pipe(replace(/class (\w+) extends PageObjectBase\s*{/g, `
+part 'app_po.g.dart';
+
+@PageObject()
 abstract class $1 {
 
   $1();
-  factory $1.create(PageLoaderElement context) = $$1.create;
-
+  factory $1.create(PageLoaderElement context) = $` + '$1' + `.create;
 `))
       // .pipe(replace(/\s+@optional\s+/g, '\n'))
       .pipe(gulp.dest(baseDir));

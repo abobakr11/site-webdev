@@ -91,7 +91,7 @@ packages:
       name: build
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.12.5"
+    version: "0.12.6"
   build_config:
     dependency: transitive
     description:
@@ -105,21 +105,21 @@ packages:
       name: build_modules
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.2+3"
+    version: "0.2.2+4"
   build_resolvers:
     dependency: transitive
     description:
       name: build_resolvers
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0+1"
+    version: "0.2.0+2"
   build_runner:
     dependency: "direct dev"
     description:
       name: build_runner
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.8"
+    version: "0.8.9"
   build_test:
     dependency: "direct dev"
     description:
@@ -133,7 +133,7 @@ packages:
       name: build_web_compilers
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.0"
+    version: "0.4.0+1"
   built_collection:
     dependency: transitive
     description:
@@ -329,7 +329,7 @@ packages:
       name: mime
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.6"
+    version: "0.9.6+1"
   mockito:
     dependency: "direct dev"
     description:
@@ -366,14 +366,14 @@ packages:
     source: hosted
     version: "1.0.2"
   pageloader:
-    dependency: "direct overridden"
+    dependency: "direct dev"
     description:
-      path: "examples/util/pageloader"
+      path: "."
       ref: HEAD
-      resolved-ref: "14f7dfcf9ea31402b35f16e9d19c6141dc146de9"
-      url: "https://github.com/dart-lang/site-webdev.git"
+      resolved-ref: "95f1c7039c02f7ecfa6d769789dffa62352d4b84"
+      url: "https://github.com/google/pageloader.git"
     source: git
-    version: "0.0.1"
+    version: "3.0.0-dev"
   path:
     dependency: transitive
     description:
@@ -457,14 +457,14 @@ packages:
       name: shelf_web_socket
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.2"
+    version: "0.2.2+1"
   source_gen:
     dependency: transitive
     description:
       name: source_gen
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.1"
+    version: "0.8.1+1"
   source_map_stack_trace:
     dependency: transitive
     description:
@@ -514,6 +514,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  sync_http:
+    dependency: transitive
+    description:
+      name: sync_http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   term_glyph:
     dependency: transitive
     description:
@@ -527,7 +534,7 @@ packages:
       name: test
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.12.37"
+    version: "0.12.38"
   tuple:
     dependency: transitive
     description:
@@ -542,6 +549,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.5"
+  unittest:
+    dependency: transitive
+    description:
+      name: unittest
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.11.7"
   utf:
     dependency: transitive
     description:
@@ -563,6 +577,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.7"
+  webdriver:
+    dependency: transitive
+    description:
+      name: webdriver
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0-beta"
   yaml:
     dependency: transitive
     description:
@@ -571,4 +592,4 @@ packages:
     source: hosted
     version: "2.1.13"
 sdks:
-  dart: ">=2.0.0-dev.52.0 <=2.0.0-dev.55.0"
+  dart: ">=2.0.0-dev.54.0 <=2.0.0-dev.55.0"
