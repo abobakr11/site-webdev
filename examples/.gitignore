@@ -4,9 +4,6 @@
 build
 !pubspec.lock
 
-# See https://github.com/dart-lang/site-webdev/issues/1351
-**/test/**/*.g.dart
-
 # Boilerplate files: ignore copies but not originals
 
 .gitignore
