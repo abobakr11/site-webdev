@@ -78,7 +78,6 @@ void main() {
   });
 }
 
-@Injectable()
 class MockLocation extends Mock implements Location {}
 
 class MockRouterState extends Mock implements RouterState {}

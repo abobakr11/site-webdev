@@ -88,7 +88,7 @@ Here is an example of a PO method for adding a new hero. It makes use of both
   Future<void> addHero(String name) async {
     await _input.clear();
     await _input.type(name);
-    return _add.click();
+    await _add.click();
   }
 ```
 

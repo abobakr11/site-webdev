@@ -17,7 +17,7 @@ abstract class DashboardPO {
 
   String get title => _title.visibleText;
 
-  List<String> get heroNames => _heroes.map((el) => el.visibleText).toList();
+  Iterable<String> get heroNames => _heroes.map((el) => el.visibleText);
 
   Future<void> selectHero(int index) => _heroes[index].click();
 }
