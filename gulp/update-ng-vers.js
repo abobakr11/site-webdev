@@ -241,7 +241,7 @@ dependency_overrides:
 abstract class $1 {
 
   $1();
-  factory $1.create(PageLoaderElement context) = $\\1.create;
+  factory $1.create(PageLoaderElement context) = $$$1.create;
 `))
       // .pipe(replace(/\s+@optional\s+/g, '\n'))
       .pipe(gulp.dest(baseDir));
