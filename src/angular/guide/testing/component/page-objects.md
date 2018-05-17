@@ -126,14 +126,17 @@ as the Hero Editor. You might use such a page object to test the title like this
 Pageloader recognizes POs that satisfy these conditions:
 
 - Source file:
-  - The filename ends with `_po.dart`.
   - The file contains a `part` statement referring to the filename but with a `.g.dart` suffix.
+  - The file does not contain any Angular annotations (like `@Component` or
+    `@GenerateInjector`) that would trigger the Angular builder. This is a
+    temporary limitation; for details, see
+    [pageloader issue #134](https://github.com/google/pageloader/issues/134).
 - PO class (declared in the source file):
   - `@PageObject()` annotates the class.
   - The class is `abstract`.
   - The class has these constructors:
     - A default constructor.
-    - A a factory constructor defined as illustrated below.
+    - A factory constructor defined as shown below.
 
 For example:
 
